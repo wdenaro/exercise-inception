@@ -1,0 +1,6 @@
+<h5>Micro Panel</h5>
+<div *ngFor="let movie of movies">
+    <b>{{ movie.title }}</b><br />
+    <span>{{ movie.year }}</span>
+    <app-nano-panel [cast]="movie.cast"></app-nano-panel>
+</div>
