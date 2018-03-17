@@ -1,5 +1,5 @@
 <ul>
     <li *ngFor="let actor of cast">
-        <b>{{ actor.name }}</b>: {{ actor.character}}
+        <b>{{ actor.name }}</b>: {{ actor.character.name}} ({{ actor.character.age }})
     </li>
 </ul>

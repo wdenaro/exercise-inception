@@ -6,22 +6,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./micro-panel.component.scss']
 })
 export class MicroPanelComponent {
-  private movies = [
+  public movies = [
     {
       title: 'Jaws',
       year: 1975,
       cast: [
-        {
-          name: 'Roy Scheider',
-          character: 'Chief Martin Brody'
+        { name: 'Roy Scheider',
+          character: {
+            name: 'Chief Martin Brody',
+            age: 41
+          }
         },
-        {
-          name: 'Robert Shaw',
-          character: 'Quint'
+        { name: 'Robert Shaw',
+          character: {
+            name: 'Quint',
+            age: 48
+          }
         },
-        {
-          name: 'Richard Dreyfuss',
-          character: 'Matt Hooper'
+        { name: 'Richard Dreyfuss',
+          character: {
+            name: 'Matt Hooper',
+            age: 32
+          }
         }
       ]
     },
@@ -29,21 +35,29 @@ export class MicroPanelComponent {
       title: 'Aliens',
       year: 1986,
       cast: [
-        {
-          name: 'Sigourney Weaver',
-          character: 'Ripley'
+        { name: 'Sigourney Weaver',
+          character: {
+            name: 'Ellen Ripley',
+            age: 31
+          }
         },
-        {
-          name: 'Carrie Henn',
-          character: 'Newt'
+        { name: 'Carrie Henn',
+          character: {
+            name: 'Newt',
+            age: 9
+        }
         },
-        {
-          name: 'Michael Biehn',
-          character: 'Corporal Hicks'
+        { name: 'Michael Biehn',
+          character: {
+            name: 'Corporal Hicks',
+            age: 28
+          }
         },
-        {
-          name: 'Paul Reiser',
-          character: 'Burke'
+        { name: 'Paul Reiser',
+          character: {
+            name: 'Burke',
+            age: 33
+          }
         }
       ]
     },
@@ -51,13 +65,17 @@ export class MicroPanelComponent {
       title: 'The Shawshank Redemption',
       year: 1994,
       cast: [
-        {
-          name: 'Tim Robbins',
-          character: 'Andy Dufresne'
+        { name: 'Tim Robbins',
+          character: {
+            name: 'Andy Dufresne',
+            age: 30
+          }
         },
-        {
-          name: 'Morgan Freeman',
-          character: 'Ellis Boyd \'Red\' Redding'
+        { name: 'Morgan Freeman',
+          character: {
+            name: 'Ellis Boyd \'Red\' Redding',
+            age: 47
+          }
         }
       ]
     }
